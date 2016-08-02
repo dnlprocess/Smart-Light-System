@@ -120,7 +120,7 @@ void loop() {
   }
   else {
 
-    if ((now.hour() >= 10) && (now.hour() <= 11)) {
+    if ((now.hour() >= 0) && (now.hour() <= 6)) {
       if ((distanceChange >= threshold) && (prevDistance != -100) && (nightTimeSet == false)) {
         nightTime = millis();
         nightTimeSet = true;
